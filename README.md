@@ -6,7 +6,7 @@ In our environment, we use pytorch=2.4.1+cu118.
 git submodule update --init --recursive
 conda create -n macgs python=3.10
 conda activate macgs
-
+pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 pip install submodules/depth-diff-gaussian-rasterization
 pip install submodules/simple-knn
