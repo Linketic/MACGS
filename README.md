@@ -12,6 +12,9 @@ pip install submodules/depth-diff-gaussian-rasterization
 pip install submodules/simple-knn
 pip install submodules/diff-gaussian-rasterization
 ```
+**Note:** Due to the use of an anonymous GitHub repository, the command `git submodule update --init --recursive` might not work properly. In this case, you need to manually download the required files:
+- For `submodules/depth-diff-gaussian-rasterization/third_party/glm`, use this specific version: [glm@5c46b9c](https://github.com/g-truc/glm/tree/5c46b9c07008ae65cb81ab79cd677ecc1934b903)
+- For `submodules/diff-gaussian-rasterization/third_party/glm`, you can use the latest version from [glm](https://github.com/g-truc/glm)
 
 ## Data Preparation
 To save the memory, you should extract the frames of each video and then organize your dataset as follows. The dataset provide in [Neural_3D_Video](https://github.com/facebookresearch/Neural_3D_Video/releases/tag/v1.0) is used.
